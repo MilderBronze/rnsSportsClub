@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>world environment day</title>
+    <script src="https://kit.fontawesome.com/3b7db2044a.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <canvas class="webgl"></canvas>
+    <div class="headerText">
+        <h1>RNSIT SPORTS CLUB</h1><br>
+        <h3>wishes <span>you</span> a very</h3><br>
+        <h2></h2>
+    </div>
+    <header>
+        <nav>
+            <img class="logo" src="../imgs/RNS_logo(w).png" alt="">
+            <div class="container">
+
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+
+    <section class="about" id="about">
+        <div class="cardsection">
+            <h1>ABOUT</h1>
+            <P>"Welcome to our World Environment Day website! Each year on June 5th, we come together to celebrate our
+                beautiful planet and raise awareness about the importance of environmental conservation. By taking
+                action today, we can secure a sustainable future for generations to come."</P>
+        </div>
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+            <div class="inline-element image" draggable="false">scroll horizontally "slowly" and observe the magic
+                "Parallax Effect"
+                happening in the cards.<br> -></div>
+            <img class="image" draggable="false" src="../imgs/budha sitting u 1.png" alt="">
+            <img class="image" draggable="false" src="../imgs/pinkmanresting.png" alt="">
+            <img class="image" draggable="false" src="../imgs/fabrice-villard-Du41jIaI5Ww-unsplash.jpg" alt="">
+            <img class="image" draggable="false" src="../imgs/jon-moore-_2MyZDsUSM4-unsplash.jpg" alt="">
+            <img class="image" draggable="false" src="../imgs/jungle.png" alt="">
+            <img class="image" draggable="false" src="../imgs/marita-kavelashvili-ugnrXk1129g-unsplash.jpg" alt="">
+            <img class="image" draggable="false" src="../imgs/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg" alt="">
+        </div>
+        <div class="footer">
+
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left" id="contacts">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-envelope"></i> sumitinbki@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +91-8825333212</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/sumit-raj-b22823227/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://twitter.com/sum_itt20"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://github.com/MilderBronze"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/sum_itt20/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Enter Your Name" required>
+                            <input type="email" name="Email" placeholder="Enter Your Email" required>
+                            <input name="Phone" type="text" placeholder="Enter Your Phone" required></input>
+                            <input name="Age" type="text" placeholder="Enter Your Age" required></input>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="copyright" align="center">&copy; Designed and created by Sumit</div>
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>

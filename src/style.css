@@ -1,0 +1,304 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background: black;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+header {
+  width: 100vw;
+  position: fixed;
+  height: 130px;
+  z-index: 99999;
+  padding: 0.9rem, 0;
+}
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  align-items: center;
+  padding-left: 20px;
+}
+.logo {
+  height: 80px;
+  width: 200px;
+}
+.container {
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 59%;
+}
+.menu {
+  height: 80px;
+  list-style: none;
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 30px;
+}
+nav ul a {
+  text-decoration: none;
+  font-size: 10px;
+  color: rgb(210, 210, 210);
+}
+a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.headerText {
+  color: white;
+  position: fixed;
+  top: 150px;
+  right: 50px;
+}
+
+.headerText h1 {
+  color: rgb(0, 195, 255);
+  text-shadow: 0 0 10px #1f6f53, 0 0 20px #1f6f53, 0 0 40px #1f6f53,
+    0 0 80px #1f6f53, 0 0 160px #1f6f53;
+}
+h2 {
+  position: absolute;
+  color: #1f6f53;
+  font-size: 50px;
+  text-transform: uppercase;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  line-height: 1em;
+  outline: none;
+  animation: animate 3s linear infinite;
+}
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #1f6f53;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #1f6f53, 0 0 20px #1f6f53, 0 0 40px #1f6f53,
+      0 0 80px #1f6f53, 0 0 160px #1f6f53;
+  }
+}
+
+/* main */
+
+.about {
+  position: absolute;
+  top: 150vh;
+  overflow: hidden;
+  height: 1300px;
+  width: 98.6vw;
+  background: rgb(0, 0, 0);
+}
+.cardsection h1,
+p {
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+.cardsection h1 {
+  font-size: 80px;
+}
+.cardsection h1:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #1f6f53, 0 0 25px #1f6f53, 0 0 50px #1f6f53,
+    0 0 100px #1f6f53;
+}
+
+.cardsection p {
+  font-size: 25px;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(0%, 0%);
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+.inline-element {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  vertical-align: middle;
+  background: #686868;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.scrolled {
+  background: rgba(48, 48, 48, 0.894);
+  transition: background 500ms;
+}
+
+/* footer */
+
+.footer {
+  position: absolute;
+  width: 98.64vw;
+  height: 400px;
+  background: rgb(0, 0, 0);
+  top: 90%;
+  left: 40px;
+  transform: translateY(-50%);
+}
+
+/* --------------------contact------------------ */
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.contact-left p {
+  margin-top: 30px;
+}
+.contact-left p i {
+  color: #1f6f53;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover {
+  color: #1f6f53;
+  transform: translateY(-5px);
+}
+.btn.btn2 {
+  display: inline-block;
+}
+.contact-right {
+  width: 100%;
+}
+form input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .btn2 {
+  padding: 0 0px;
+  font-size: 18px;
+  margin: 34px 0 40px 40px;
+  cursor: pointer;
+  background: transparent;
+}
+form .btn2:hover {
+  transition: color 0.5s;
+  background: transparent;
+  color: rgb(5, 255, 247);
+}
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid transparent;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #1f6f53;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  /* this means that the width of the column will be 35% */
+  flex-basis: 35%;
+}
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+/* in the first column, the width is 35% and in the second column, the width is 60%, so we will get a remaining of 5% of width in between of them, because justify-content is set to space between. */
+.about-col-2 {
+  flex-basis: 60%;
+}
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+.container {
+  padding: 10px 10%;
+}
+#msg {
+  color: #1f6f53;
+}
+#copyright {
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  font-size: 10px;
+  transform: translateX(-50%);
+}
+
+/* --------------media query---------------- */
+@media (max-width: 700px) {
+  .container {
+    display: none;
+  }
+  .cardsection h1 {
+    font-size: 25px;
+  }
+  .cardsection p {
+    font-size: 15px;
+  }
+}
